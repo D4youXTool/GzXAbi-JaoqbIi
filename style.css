@@ -1,0 +1,143 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+  text-align: center;
+  padding: 30px 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.header h1 {
+  font-size: 28px;
+}
+.header p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Grid Produk */
+.produk-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Card Produk */
+.produk {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+}
+.produk:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+.produk h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.produk p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Tombol */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btn, .detail-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Tombol beli */
+.btn {
+  background: linear-gradient(135deg, #0069ff, #0040ff);
+  color: #fff;
+  text-decoration: none;
+}
+.btn:hover {
+  background: linear-gradient(135deg, #0040ff, #0026b3);
+  transform: scale(1.08);
+}
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Tombol detail */
+.detail-btn {
+  background: linear-gradient(135deg, #28c76f, #22a654);
+  color: #fff;
+}
+.detail-btn:hover {
+  background: linear-gradient(135deg, #34e07f, #1f8a47);
+  transform: scale(1.08);
+}
+.detail-btn:active {
+  transform: scale(0.95);
+}
+
+/* Detail Produk */
+.detail {
+  max-height: 0;
+  overflow: hidden;
+  background: #f1f3f9;
+  padding: 0 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+.detail.active {
+  max-height: 300px;
+  padding: 12px;
+}
+.detail h4 {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #444;
+}
+.detail ul {
+  list-style: none;
+}
+.detail ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 14px;
+}
