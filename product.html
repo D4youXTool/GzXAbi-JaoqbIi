@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoctraShop - Produk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>NoctraShop</h1>
+    <p>Produk & Jasa Digital 2025</p>
+  </header>
+
+  <!-- Produk -->
+  <section class="produk-container">
+    <!-- Nokos -->
+    <div class="produk">
+      <h3>Nokos WhatsApp</h3>
+      <p>Nomor kosong siap pakai.</p>
+      <div class="actions">
+        <button class="detail-btn">Lihat Detail</button>
+        <a href="https://t.me/XNoctra" target="_blank" class="btn">Pesan</a>
+      </div>
+      <div class="detail">
+        <h4>Pilihan Negara:</h4>
+        <ul>
+          <li>🇮🇩 Indonesia</li>
+          <li>🇻🇳 Vietnam</li>
+          <li>🇺🇸 USA</li>
+          <li>🇵🇭 Filipina</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Unban WA -->
+    <div class="produk">
+      <h3>Jasa Unban WA Permanen</h3>
+      <p>Bantu pulihkan akun WhatsApp yang terblokir permanen.</p>
+      <div class="actions">
+        <button class="detail-btn">Lihat Detail</button>
+        <a href="https://t.me/XNoctra" target="_blank" class="btn">Pesan</a>
+      </div>
+      <div class="detail">
+        <h4>Paket Tersedia:</h4>
+        <ul>
+          <li>Unband Perma Fresh (kedip) 25k</li>
+          <li>Unband Perma Lumut 7Hari 40k</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="produk">
+      <h3>Murid Unband Wa Permanen</h3>
+      <p>Mengajarkan cara pulihkan akun WhatsApp yang terblokir permanen.</p>
+      <div class="actions">
+        <button class="detail-btn">Lihat Detail</button>
+        <a href="https://t.me/XNoctra" target="_blank" class="btn">Pesan</a>
+      </div>
+      <div class="detail">
+        <h4>Murid Unband:</h4>
+        <ul>
+          <li>Murid Unband Fresh (kedip) 20k (awal open)</li>
+          <li>Murid Unband All Opsi (ga kedip) 25k</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Website -->
+    <div class="produk">
+      <h3>Jasa Pembuatan Website</h3>
+      <p>Website custom sesuai kebutuhanmu.</p>
+      <div class="actions">
+        <button class="detail-btn">Lihat Detail</button>
+        <a href="https://t.me/XNoctra" target="_blank" class="btn">Pesan</a>
+      </div>
+      <div class="detail">
+        <h4>Pilihan Website:</h4>
+        <ul>
+          <li>Portfolio</li>
+          <li>Toko Online</li>
+          <li>Landing Page</li>
+          <li>Company Profile</li>
+          <li>Payment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 NoctraShop. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Toggle detail produk
+    const buttons = document.querySelectorAll(".detail-btn");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const detailBox = btn.parentElement.nextElementSibling;
+        detailBox.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>
